@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#0f1a1f</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorCustomItem">#202936</color>
+    <color name="colorBackground">#A8A8A8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorHint">#707479</color>
+    <color name="Blur">#6F838383</color>
+    <color name="colorMainBackground">#0f1a1f</color>
+    <color name="colorAttention">#FF5959</color>
+    <color name="red">#FF0000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorAreaOnMyList">#454444</color>
+    <color name="colorLime">#008000</color>
+    <color name="colorProzor">#00000000</color>
+
+    <color name="colorFacebook">#323232</color>
+    <color name="colorPrivat24">#6dc72e</color>
+    <color name="colorInstagram">#a245b8</color>
+    <color name="colorVkontakte">#5181b8</color>
+    <color name="colorTwitter">#598dca</color>
+    <color name="colorGmail">#c63737</color>
+    <color name="colorSouncloud">#e04006</color>
+    <color name="colorGitHub">#ffffff</color>
+    <color name="colorCisko">#666ff4</color>
+    <color name="colorSteam">#101d2f</color>
+    <color name="colorTelegram">#1e96c8</color>
+    <color name="colorRazercentral">#44d62c</color>
+    <color name="colorSkype">#ffffff</color>
+    <color name="colorMic_ro_soft">#ffffff</color>
+    <color name="colorRockstar">#ffab00</color>
+    <color name="colorTwitch">#6441a5</color>
+    <color name="colorNoItem">#0f1a1f</color>
+
 </resources>

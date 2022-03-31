@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">MyApp</string>
+    <string name="app_name">EthernetApp</string>
+    <string name="empty">Немає збережених паролів</string>
+
+    <string name="inputPassword">Password</string>
+    <string name="inputName">Username</string>
+    <string name="inputEmail">Email</string>
+    <string name="registration">Registration</string>
+    <string name="registrButton">Зареєструватися</string>
+    <string name="or">або</string>
+    <string name="loginButton">Ввійти</string>
+
+    <string-array name="program_name">
+        <item>Facebook</item>
+        <item>Приват24</item>
+        <item>Instagram</item>
+        <item>Vkontakte</item>
+        <item>Twitter</item>
+        <item>Gmail</item>
+        <item>SoundCloud</item>
+        <item>GitHub</item>
+        <item>Cisko NetaCad</item>
+        <item>Steam</item>
+        <item>Telegram</item>
+        <item>Razer Central</item>
+        <item>Skype</item>
+        <item>Microsoft</item>
+        <item>Rockstar Games</item>
+        <item>Twitch</item>
+    </string-array>
+
 </resources>
