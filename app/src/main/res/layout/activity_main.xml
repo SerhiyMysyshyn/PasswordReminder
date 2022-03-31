@@ -1,18 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
     tools:context=".MainActivity">
 
+    <SearchView
+        android:id="@+id/mainSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/custom_search_area"
+        android:focusableInTouchMode="true"
+        android:queryHint="Пошук">
+
+    </SearchView>
+
+    <ImageView
+        android:id="@+id/imageView_ethernet_error"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"
+        android:visibility="invisible"
+        app:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_action_ethernet_error" />
+
     <TextView
+        android:id="@+id/empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:fontFamily="arial"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:text="@string/empty"
+        android:textColor="@color/colorHint">
+    </TextView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/progresBar_mainList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </ProgressBar>
+
+    <ImageButton
+        android:id="@+id/Button_sort_list"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorMainBackground"
+        android:foreground="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_action_sort_az"
+        tools:ignore="SpeakableTextPresentCheck"
+        app:tint="@color/colorWhite" />
+
+    <ImageButton
+        android:id="@+id/account_settings_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="7dp"
+        android:background="@color/colorMainBackground"
+        android:foreground="?android:selectableItemBackground"
+        android:src="@drawable/ic_action_account_settings"
+        app:tint="@color/colorWhite"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="53dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp" />
+
+    <ImageButton
+        android:id="@+id/addNewRecordBTN"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/custom_search_area"
+        android:foreground="?android:selectableItemBackground"
+        app:srcCompat="@drawable/ic_action_add"
+        app:tint="@color/colorWhite"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
